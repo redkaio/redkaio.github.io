@@ -1,3 +1,42 @@
+<html lang="pt-br">
+<body>
+<head>
+    <title>Redkaio's best page</title>
+    <meta charset="utf-8">
+    <meta name="author" content="redkaio">
+    <meta name="description" content="Resume of a student who is trying to get a job">
+    <meta name="keywords" content="redkaio, resume, HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1 {
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        font-variant: small-caps; 
+        color: red; 
+    }
+    #grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+           }
+
+    #line-through {
+        font-variant: normal;
+        text-align: left;
+        text-decoration: line-through;
+    }
+    #colortest {
+        color: whitesmoke;
+        background-color: blueviolet;
+    }
+        </style>
+</head>    
+
 <h1><em>This is my first Header. It comes on the top of the page</em></h1>
 <h2>The second header comes right below the first one, but less highlighted</h2>
 
@@ -16,11 +55,34 @@
 </ol>
 
 <p>GitHub, you will not win.</p>
-<p>Há! I told you!</ps>
+<p>Há! I told you!</p>
 <p>So, keeping the studies up to date, this is how we can add links on words using HTML. And why not test it using GitHub as a sample? This is my <a href="https://github.com/redkaio/resume" target="_blank">GitHub Page</a>, where I will post my progresses.</p>
 
 <p>This is an <a href="mailto:" target="_blank">Email</a> test. And it seems to work just fine!</p>
 
 <p>So, there is two kinds of breaking row: br and hr</p>
 <hr>
-This was a 'hr' test.
+<p>This was a 'hr' test.</p>
+<p>Lets try some differente characters: ç ção ô á</p>
+
+<p> We finally started the Cascading Style Sheets and so far we have:<br>
+    .class<br>
+    #id - only one per page<br>
+</p>
+<p style="text-indent:50px;">This is an indent test.</p>
+<p>Fonts!<br>
+    font-family<br>
+    font-size<br>
+    font-style<br>
+    font-variant<br>
+
+<p id="grad1">Text! I am just playing with some CSS Features.<br>
+    text-align<br>
+    text-decoration<br>
+    text-indent<br>
+    text-transform<br>  
+</p>
+<p id="line-through">This is a test with line-through.</p>
+<p id="colortest">This is a test with color and background-color.</p>
+</body>
+</html>
