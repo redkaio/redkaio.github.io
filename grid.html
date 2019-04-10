@@ -9,31 +9,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext" rel="stylesheet">
 
     <title>Hello, world!</title>
 
 
 <style>
     #header {
-        background: url(https://images.unsplash.com/photo-1520092352425-9699926a9b0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center center / cover no-repeat;
+        background: url(https://images.unsplash.com/photo-1531594835867-65b60cc9e4ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) center center / cover no-repeat;
             }
 
 .fontLato {
     font-family: 'Lato', sans-serif;
 }
 
+.fontp2 {
+    font-family: 'Press Start 2P', cursive;
+}
 #gallery {
-    background: #030303;
+    background:#182126;
 }
 
-h1 {
+.fontColor {
     color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.navText {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
 body {
-    background-color:#030303;
+    background: url(https://images.unsplash.com/photo-1520092352425-9699926a9b0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     height:100%;
     width:100%;
+    
+}
+
+.disableBtn {
+    color: white;
 }
 
 .card {
@@ -49,18 +63,58 @@ height: 100%;
 </head>
   <body>
 
+    <nav class="navbar fixed-top navText navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Kaio C.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/kaio-cezar-araujo-rodrigues-70619562/" target="_blank">Linkedin</a>
+            </li><li class="nav-item">
+                <a class="nav-link" href="https://github.com/redkaio/" target="_blank">Github</a>
+              </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a> -->
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
+            <!-- </li> -->
+            <li class="nav-item">
+              <a class="nav-link disabled" style="color: white;" href="#">Em breve!</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
 
 
-<section id="header" class="jumbotron jumbotron-fluid text-center mb-0" style="color: white;">
-    <h1 class="display-5 fontLato">BACKLOG</h1>
-    <p class="lead fontLato">O que tenho jogado e gostado no momento.</p>
+
+
+
+<section id="header" class="jumbotron jumbotron-fluid text-center mb-0">
+    <h1 class="display-5 fontp2 fontColor">BACKLOG</h1>
+    <p class="lead fontLato fontColor">O que tenho jogado e gostado no momento.</p>
     <!-- <a href="" class="btn btn-primary">Do something</a>
     <a href="" class="btn btn-secondary">Another thing</a> -->
 
-</section>
 
-<section id="gallery">
-    <div class="container mt-0">
+
+<!-- <section id="gallery" class="mx-5"> -->
+    <div class="container">
            <div class="row d-flex justify-content-center">
                <div class="col-lg-4 mb-3">
                     <div class="card">
@@ -108,7 +162,7 @@ height: 100%;
     
 
 
-
+</section>
 </section>
 
     <!-- Optional JavaScript -->
