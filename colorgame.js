@@ -89,7 +89,7 @@ for (var i = 0; i < squares.length; i++) {
 
         } else {
             this.style.backgroundColor = "#232323";
-            messageDisplay.textContent = "Wrong! Pick Another One!";
+            messageDisplay.textContent = "Try Again!";
 
 
         };
