@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="blog.css">
-
-    <title>My Blog</title>
+    <link rel="stylesheet" href="colorgame.css">
+    <title>Great Color Game!</title>
 </head>
-
 <body>
-    <div>
-        <h3>26 de Julho de 2020</h3>
-
-        <h1>Atualização</h1>
-
-        <p>Olá a todos! Meu nome é Kaio Cezar e atualmente estudo para ser um Desenvolvedor Web, Fullstack ou não.
-            Se você chegou aqui é porque tem minha página guardada em algum lugar ou porque veio através do meu currículo, o que é sinal de que ao menos olhou pra ele!
-            Apesar dessa página ser HTML e CSS sem qualquer base de Javascript, irei atualizar ela aos poucos, tentando criar um portfólio minimamente apresentável.
-            De qualquer maneira, agradeço a atenção!
-        </p>
-            
-        <p>  Meu currículo pode ser acessado <a href="resume/kaiodev_cv.pdf">aqui.</a>  </p>
-            
-           <p>E pra não dizer que não tenho nada pronto, que tal testar seus conhecimentos em RGB? 
-            Esse jogo é um dos projetos feitos no curso de desenvolvimento curso. Ele é feito em sua maioria em Javascript!
-            Você pode investir seu tempo jogando ele <a href="rgb-game/colorgame.html">aqui!</a>
-
-            No mais, obrigado novamente pela visita!
-        </p>
+    <h1>The Great 
+        <br>
+        <span id="colorDisplay">RGB</span>
+        <br>
+        Color Game
+    </h1>
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <button id="easyBtn" class="easyselected">Easy</button>
+        <button id="hardBtn" class="hardselected">Hard</button>
     </div>
-<hr>
+    </div>
+    
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
 
+    <script type="text/javascript" src="colorgame.js"></script>
 </body>
-
 </html>
